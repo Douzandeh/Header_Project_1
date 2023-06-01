@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: red;
+    height: 90vh;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: 90vh;
+}
+
+.left{
+    background-color: green;
+    grid-column: 1/4;
+    background-image: url(./img/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.right{
+    background-color: #222121;
+    grid-column: 4/7;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    top: 40%;
+    right:42%;
+    background: linear-gradient(to right , #202020 45% , #cac8c8 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
